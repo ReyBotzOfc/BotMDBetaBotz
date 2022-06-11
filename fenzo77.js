@@ -1136,7 +1136,7 @@ const jumlahUser = pendaftar.length
   if (!isInventoriBuruan){ addInventoriBuruan(m.sender) }
   
 const listmn = `Selamat ${salam} ${pushname} 👋
-Saya *${namebot}*, Assisten *Lexxy Official* Bot Ini Adalah Beta Multi-Device WhatsApp.
+Saya *${namebot}*, Assisten *KoKoRey Official* Bot Ini Adalah Beta Multi-Device WhatsApp.
 Jika Ada Fitur Error Atau Bug Segera Lapor Ke Owner Bot
 ─────────────
 ❏ *Info User*
@@ -2229,7 +2229,7 @@ case 'coffe': case 'kopi': {
                 let buttonMessage = {
                     image: { url: 'https://coffee.alexflipnote.dev/random' },
                     caption: `☕ Random Coffe`,
-                    footer: `Created By © LexxySlemek`,
+                    footer: `Created By ® KoKoRey`,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3571,8 +3571,8 @@ let buttons = [
 let buttonMessage = {
 image: log0,
 jpegThumbnail: thum,
-caption: `*「 Lol Lexxy+ 」*\n\nChange Info, Select Open Or Close`,
-footer: "© Lol Lexxy+",
+caption: `*「 Lol Rey+ 」*\n\nChange Info, Select Open Or Close`,
+footer: "® Lol Koko+",
 buttons: buttons,
 headerType: 4
 }
@@ -3580,7 +3580,7 @@ mans.sendMessage(m.chat, buttonMessage, { quoted: m })
 }
 }
 break
-case 'group': case 'grup': {
+case 'gc': case 'grup': {
 if (isBan) return m.reply(mess.ban)
 if (!m.isGroup) return m.reply(mess.group)
 if (!isBotAdmins) return m.reply(mess.botAdmin)
@@ -3598,7 +3598,7 @@ let buttonMessage = {
 image: log0,
 jpegThumbnail: thum,
 caption: `*「 Lol KoKoRey+ 」*\n\nChange Group Setting, Select Open Or Close`,
-footer: "© Lol KoKoRey+",
+footer: "® Lol KoKoRey+",
 buttons: buttons,
 headerType: 4
 }
@@ -3624,7 +3624,7 @@ let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender :
 await mans.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 }
 break
-case 'kick': {
+case 'tendang': {
 if (isBan) return m.reply(mess.ban)
 if (!m.isGroup) return m.reply(mess.group)
 if (!isBotAdmins) return m.reply(mess.botAdmin)
@@ -3633,7 +3633,7 @@ let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender :
 await mans.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 }
 break
-case 'add': {
+case 'tambah': {
 if (isBan) return m.reply(mess.ban)
 if (!m.isGroup) return m.reply(mess.group)
 if (!isBotAdmins) return m.reply(mess.botAdmin)
@@ -3889,12 +3889,12 @@ m.reply(`\`\`\`「 Kalkulator 」\`\`\`\n\n*•> Hitung :* ${qsd}\n*•> Hasil :
 }
 }
 break
-case 'public': {
+case 'umum': {
 if (isBan) return m.reply(mess.ban)
 if (!isCreator) return m.reply(mess.owner)
 mans.public = true
 m.reply('Sukse Change To Public Usage')
-mans.setStatus(`Mode : Public Created By Lexxy`)
+mans.setStatus(`Mode : Umum Created By KokoRey`)
 }
 break
 case 'setstatut':
@@ -3902,12 +3902,12 @@ case 'setbio':
 if (!q) return m.reply('Kirim perintah *#setstatus text*')
 mans.setStatus(`${q}`)
 break
-case 'self': {
+case 'pribadi': {
 if (isBan) return m.reply(mess.ban)
 if (!isCreator) return m.reply(mess.owner)
 mans.public = false
 m.reply('Sukses Change To Self Usage')
-mans.setStatus(`Mode : Self Created By Lexxy`)
+mans.setStatus(`Mode : Pribadi Created By KokoRey`)
 }
 break
 case 'speed':case 'ping': case 'botstatus': case 'statusbot': {
@@ -4189,11 +4189,11 @@ buttons: buttons,
 headerType: 4,
 contextInfo:{externalAdReply:{
 title:"NOMOR BOT WHATSAPP, MULTI DEVICE TERBARU FITUR BERJIBUN - ZackMans",
-body:"© Lol Lexxy+ - X - Lol Lexxy+",
+body:"® Lol Koko+ - X - Lol Rey+",
 thumbnail: log0,
 mediaType:2,
-mediaUrl: "https://youtube.com/watch?v=w6w0cy_1HY4",
-sourceUrl: "https://youtube.com/watch?v=w6w0cy_1HY4"
+mediaUrl: "https://instagram.com/callme_rey1921",
+sourceUrl: "https://instagram.com/callme_rey1921"
 }}
 }
 mans.sendMessage(m.chat, buttonMessage, { quoted: m })
